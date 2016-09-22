@@ -18,7 +18,7 @@ a:hover {
   color: #5aadbb;
 }
 
-terres-menu{
+pvs-menu{
   position: fixed;
   top: -50px;
   left: 0;
@@ -27,17 +27,11 @@ terres-menu{
   transition: 1s ease-in-out;
 }
 .logomenu{
-  height: 1.2rem;
+  height: 1.6rem;
 }
 .actiu{
   top: 0;
 }
-.noindex{
-  top: 0 !important;
-}
-/*.md-select-menu-container{
-  z-index: 9999;
-}*/
 md-toolbar md-select .md-text{
   font-size: 15px;
 }
@@ -77,34 +71,8 @@ md-select-menu .md-text{
   height: 100vh;
   width: 100vw;
 }
-.title-h1 {
-  font-weight: 300;
-  font-size: 2rem;
-  margin: 1rem;
-}
-.title-logo {
-  max-height: 18rem;
-  max-width: 90vw;
-  margin-top: 3rem;
-  border-bottom: 1px solid black;
-  position: relative;
-  z-index: 1;
-}
-.title-h2 {
-  font-weight: 300;
-  font-size: 1rem;
-  margin: .5rem;
-  position: relative;
-  z-index: 1;
-}
-.title-h2 img{
-  height: 1.5rem;
-}
 .magnificent-slider{
   z-index: 0 !important;
-}
-.terres{
-  letter-spacing: -0.05rem;
 }
 md-toolbar{
   min-height: 50px;
@@ -113,7 +81,7 @@ md-toolbar{
   height: 50px;
 }
 
-terres-footer{
+pvs-footer{
   position: fixed;
   bottom: 0;
   left: 0;

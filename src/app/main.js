@@ -1,36 +1,29 @@
 angular
   .module('app')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $translate) {
+    $scope.$watch(
+      function (scope) {
+        return $translate.use();
+      },
+      function () {
+        $scope.magnificent.slides[1].src = 'img/slide_2'+$translate.use()+'.jpg';
+        $scope.magnificent.slides[2].src = 'img/slide_3'+$translate.use()+'.jpg';
+      }
+    );
     $scope.magnificent = {
       current: 0,
       slides: [
         {
-          src: 'img/salinada-40.jpg',
-          description: 'Les salines'
+          src: 'img/slide_1.jpg',
+          description: 'Marca corporativa'
         },
         {
-          src: 'img/_MG_0914.jpg',
-          description: 'Platja'
+          src: 'img/slide_2'+$translate.use()+'.jpg',
+          description: 'Frase_1'
         },
         {
-          src: 'img/_MG_4636.jpg',
-          description: 'Skyline Tortosa'
-        },
-        {
-          src: 'img/Amp_MG_0819.jpg',
-          description: 'Camí a la platja'
-        },
-        {
-          src: 'img/cabiscol-17.jpg',
-          description: 'Partida de cabiscol'
-        },
-        {
-          src: 'img/_MG_5908.jpg',
-          description: 'Façana fluvial de Tortosa'
-        },
-        {
-          src: 'img/deltebre-36.jpg',
-          description: 'Arròs recent plantat'
+          src: 'img/slide_3'+$translate.use()+'.jpg',
+          description: 'Frase_2'
         }
       ],
       settings: {
