@@ -1,0 +1,133 @@
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  overflow: auto !important;
+}
+
+body, h1, h2, h3 {
+  font-weight: 300
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5aadbb;
+}
+
+terres-menu{
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 1s ease-in-out;
+}
+.logomenu{
+  height: 1.2rem;
+}
+.actiu{
+  top: 0;
+}
+.noindex{
+  top: 0 !important;
+}
+/*.md-select-menu-container{
+  z-index: 9999;
+}*/
+md-toolbar md-select .md-text{
+  font-size: 15px;
+}
+md-select-menu md-content{
+  min-width: 45px;
+}
+md-select-menu md-option{
+  height: 35px;
+}
+md-select-menu .md-text{
+  font-size: 15px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Estils per a la pàgina principal
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  color: black;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+.title-h1 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 1rem;
+}
+.title-logo {
+  max-height: 18rem;
+  max-width: 90vw;
+  margin-top: 3rem;
+  border-bottom: 1px solid black;
+  position: relative;
+  z-index: 1;
+}
+.title-h2 {
+  font-weight: 300;
+  font-size: 1rem;
+  margin: .5rem;
+  position: relative;
+  z-index: 1;
+}
+.title-h2 img{
+  height: 1.5rem;
+}
+.magnificent-slider{
+  z-index: 0 !important;
+}
+.terres{
+  letter-spacing: -0.05rem;
+}
+md-toolbar{
+  min-height: 50px;
+}
+.md-toolbar-tools{
+  height: 50px;
+}
+
+terres-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.footer {
+  padding: 0.3rem;
+  font-size: .6rem;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+}
+md-dialog-content{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
