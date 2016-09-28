@@ -71,9 +71,25 @@ md-select-menu .md-text{
   height: 100vh;
   width: 100vw;
 }
+.title ul{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  
+}
+.title ul img{
+  max-height: 100%;
+  max-width: 100%;
+}
 .magnificent-slider{
   z-index: 0 !important;
 }
+/*.magnificent-slide{
+  height: auto;
+  width: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+}*/
 md-toolbar{
   min-height: 50px;
 }

@@ -1,7 +1,7 @@
 var english = {
   MENU: {
     HOLA: 'Hello',
-    PORTFOLI: 'Protfolio',
+    PORTFOLI: 'Portfolio',
     CONTACTA: 'Contact'
   },
   DEVELOPED_FOOTER: 'Developed by'
@@ -10,26 +10,26 @@ var english = {
 var spanish = {
   MENU: {
     HOLA: 'Hola',
-    PORTFOLI: 'Protfolio',
+    PORTFOLI: 'Portfolio',
     CONTACTA: 'Contacta'
   },
-  DEVELOPED_FOOTER: 'Dessarollador por'
+  DEVELOPED_FOOTER: 'Dessarollado por'
 };
 
 var catalan = {
   MENU: {
     HOLA: 'Hola',
-    PORTFOLI: 'Protfoli',
+    PORTFOLI: 'Portfoli',
     CONTACTA: 'Contacte'
   },
   DEVELOPED_FOOTER: 'Desenvolupat per'
 };
 
 angular
-  .module('app', ['ui.router', 'ngAnimate', 'ngMaterial', 'angular-magnificent', 'pascalprecht.translate', 'ngSanitize'])
+  .module('app', ['ui.router', 'ngAnimate', 'ngMaterial', 'pascalprecht.translate', 'ngSanitize', 'angular-carousel'])
   .config(function ($mdThemingProvider, $translateProvider) {
     $mdThemingProvider.theme('default')
-      .primaryPalette('blue-grey', {
+      .primaryPalette('grey', {
         'default': '400',
         'hue-1': '50'
       })

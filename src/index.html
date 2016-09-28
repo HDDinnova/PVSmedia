@@ -3,10 +3,27 @@
   <head>
     <base href="/">
     <meta charset="utf-8">
-    <title>terres - International tourism film festival</title>
-    <meta name="description" content="">
+    <title>PVS media</title>
+    <meta name="description" content="PVS media, a goal without a plan is just a wish">
+    <meta name="keywords" content="PVS,media,film,business,corporate,marketing">
+    <meta name="author" content="MakeInApps.cat & PVS Media">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="nositelinkssearchbox" />
+
+    <meta property="og:site_name" content="PVS media"/>
+    <meta property="og:title" content="PVS media, a goal without a plan is just a wish"/>
+    <meta property="og:url" content="http://pvsmedia.info"/>
+    <meta property="og:image" itemprop="image" content="http://pvsmedia.info/img/pvs-logo.png"/>
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="en_EN" />
 
     <!-- build:css({.tmp,src}) styles/vendor.css -->
     <!-- bower:css -->
@@ -23,11 +40,11 @@
 
   <body ng-app="app">
     <pvs-menu>
-      <md-toolbar class="md-hue-1" ng-controller="menuCtrl">
+      <md-toolbar class="md-hue-2" ng-controller="menuCtrl">
         <div class="md-toolbar-tools">
           <h2 class="terres"><span><a ui-sref="index"><img src="img/pvs-logo.png" alt="Logo PVSmedia" class="logomenu" /><strong>&nbspPVS</strong>&nbspmedia</a></span></h2>
           <span flex></span>
-          <md-button ui-sref="register">{{'MENU.HOLA' | translate}}</md-button>
+          <md-button>{{'MENU.HOLA' | translate}}</md-button>
           <md-button>{{'MENU.PORTFOLI' | translate}}</md-button>
           <md-button>{{'MENU.CONTACTA' | translate}}</md-button>
           <md-select ng-model="userLang" aria-label="Select language" ng-change="setLang()" class="md-no-underline">
@@ -43,9 +60,6 @@
         {{'DEVELOPED_FOOTER' | translate}}&nbsp;
         <a href="http://www.makeinapps.cat/" target="_blank">
           MakeInApps.cat
-        </a>&nbsp;&&nbsp;
-        <a href="http://www.filmsnomades.com/" target="_blank">
-          Filmsnómades
         </a>
       </footer>
     </pvs-footer>
