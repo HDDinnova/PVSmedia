@@ -1,0 +1,12 @@
+{
+  "MENU": {
+    "HOLA": "Hello",
+    "PORTFOLI": "Portfolio",
+    "CONTACTA": "Contact"
+  },
+  "SLIDER": {
+    "SLIDE2": "A <span>goal</span><br/>without a <span>plan</span><br/>is just a wish",
+    "SLIDE3": "<span>Marketing</span> is no longer<br/>about the stuff that you make,<br/>but about the <span>stories</span> you tell"
+  },
+  "DEVELOPED_FOOTER": "Developed by"
+}

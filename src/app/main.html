@@ -2,14 +2,21 @@
   <main class="main">
     <div class="title" ng-controller="MainCtrl">
       <ul rn-carousel rn-carousel-auto-slide="5" rn-carousel-controls-allow-loop class="image">
-        <li>
+        <li id="slide1" layout="column" layout-align="center center">
           <img src="img/slide_1.jpg" alt="PVS media" />
         </li>
-        <li>
-          <h1>Un <span>objectiu</span><br />sense un <span>pla</span><br />és només un desig</h1>
+        <li id="slide2">
+          <div class="text">
+            <h1 translate ng-bind-html>{{'SLIDER.SLIDE2' | translate}}</h1>
+            <p>Antoine de Sant-Exupéry</p>
+          </div>
           <img src="img/slide_2ca.jpg" alt="PVS media" />
         </li>
-        <li>
+        <li id="slide3">
+          <div class="text">
+            <h1 translate ng-bind-html>{{'SLIDER.SLIDE3' | translate}}</h1>
+            <p>Seth Godin</p>
+          </div>
           <img src="img/slide_3ca.jpg" alt="PVS media" />
         </li>
       </ul>

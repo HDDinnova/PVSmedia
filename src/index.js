@@ -1,32 +1,5 @@
-var english = {
-  MENU: {
-    HOLA: 'Hello',
-    PORTFOLI: 'Portfolio',
-    CONTACTA: 'Contact'
-  },
-  DEVELOPED_FOOTER: 'Developed by'
-};
-
-var spanish = {
-  MENU: {
-    HOLA: 'Hola',
-    PORTFOLI: 'Portfolio',
-    CONTACTA: 'Contacta'
-  },
-  DEVELOPED_FOOTER: 'Dessarollado por'
-};
-
-var catalan = {
-  MENU: {
-    HOLA: 'Hola',
-    PORTFOLI: 'Portfoli',
-    CONTACTA: 'Contacte'
-  },
-  DEVELOPED_FOOTER: 'Desenvolupat per'
-};
-
 angular
-  .module('app', ['ui.router', 'ngAnimate', 'ngMaterial', 'pascalprecht.translate', 'ngSanitize', 'angular-carousel'])
+  .module('app', ['ui.router', 'ngAnimate', 'ngMaterial', 'pascalprecht.translate', 'ngCookies', 'ngSanitize', 'angular-carousel'])
   .config(function ($mdThemingProvider, $translateProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('grey', {
@@ -42,10 +15,12 @@ angular
       })
       .determinePreferredLanguage()
       .fallbackLanguage('en')
-      .translations('en', english)
-      .translations('es', spanish)
-      .translations('ca', catalan)
-      .useSanitizeValueStrategy('escape');
+      .useLocalStorage()
+      .useStaticFilesLoader({
+        prefix: 'i18n/locale-',
+        suffix: '.json'
+      });
+      // .useSanitizeValueStrategy(null);
   })
   .controller('menuCtrl', function ($scope, $translate, $timeout) {
     $scope.langs = [

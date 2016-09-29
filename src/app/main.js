@@ -1,5 +1,5 @@
 angular
   .module('app')
-  .controller('MainCtrl', function ($scope, $translate) {
-    
+  .controller('MainCtrl', function () {
+
   });

@@ -1,0 +1,12 @@
+{
+  "MENU": {
+    "HOLA": "Hola",
+    "PORTFOLI": "Portfoli",
+    "CONTACTA": "Contacte"
+  },
+  "SLIDER": {
+    "SLIDE2": "Un <span>objectiu</span><br/>sense un <span>pla</span><br/>és només un desig",
+    "SLIDE3": "El <span>Màrketing</span> ja no es basa<br/>en els productes que elabores,<br/>sinó en les <span>històries</span> que contes"
+  },
+  "DEVELOPED_FOOTER": "Desenvolupat per"
+}
