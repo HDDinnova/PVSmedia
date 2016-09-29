@@ -19,8 +19,8 @@ angular
       .useStaticFilesLoader({
         prefix: 'i18n/locale-',
         suffix: '.json'
-      });
-      // .useSanitizeValueStrategy(null);
+      })
+      .useSanitizeValueStrategy('sanitize');
   })
   .controller('menuCtrl', function ($scope, $translate, $timeout) {
     $scope.langs = [
@@ -40,7 +40,7 @@ angular
     };
     $timeout(function () {
       angular.element(document.querySelector('pvs-menu')).addClass('actiu');
-    }, 3000);
+    }, 1500);
   })
   .controller('footerCtrl', function ($scope) {
     $scope.any = new Date();

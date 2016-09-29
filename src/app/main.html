@@ -1,25 +1,33 @@
 <div class="main-container">
-  <main class="main">
-    <div class="title" ng-controller="MainCtrl">
-      <ul rn-carousel rn-carousel-auto-slide="5" rn-carousel-controls-allow-loop class="image">
-        <li id="slide1" layout="column" layout-align="center center">
+  <ul class="title" rn-carousel rn-carousel-auto-slide="5" rn-carousel-controls-allow-loop>
+    <li id="slide1" layout="row" >
+      <div layout-gt-sm="row" layout="column">
+        <div flex-gt-sm="50" flex-offset-gt-sm="25" flex="100" class="icona">
           <img src="img/slide_1.jpg" alt="PVS media" />
-        </li>
-        <li id="slide2">
-          <div class="text">
-            <h1 translate ng-bind-html>{{'SLIDER.SLIDE2' | translate}}</h1>
-            <p>Antoine de Sant-Exupéry</p>
-          </div>
-          <img src="img/slide_2ca.jpg" alt="PVS media" />
-        </li>
-        <li id="slide3">
-          <div class="text">
-            <h1 translate ng-bind-html>{{'SLIDER.SLIDE3' | translate}}</h1>
-            <p>Seth Godin</p>
-          </div>
-          <img src="img/slide_3ca.jpg" alt="PVS media" />
-        </li>
-      </ul>
-    </div>
-  </main>
+        </div>
+      </div>
+    </li>
+    <li id="slide2">
+      <div layout-gt-sm="row" layout="column">
+        <div flex-gt-sm="25" flex-offset-gt-sm="15" flex="100" class="icona">
+          <img src="img/slide_2.jpg" alt="PVS media" />
+        </div>
+        <div flex-gt-sm="35" flex="100" layout="column" class="text">
+          <h1 translate ng-bind-html>{{'SLIDER.SLIDE2'}}</h1>
+          <p>Antoine de Sant-Exupéry</p>
+        </div>
+      </div>
+    </li>
+    <li id="slide3">
+      <div layout-gt-sm="row" layout="column">
+        <div flex-gt-sm="35" flex="100" class="icona">
+          <img src="img/slide_3.jpg" alt="PVS media" />
+        </div>
+        <div flex-gt-sm="60" flex="100" layout="column" class="text">
+          <h1 translate ng-bind-html>{{'SLIDER.SLIDE3'}}</h1>
+          <p>Seth Godin</p>
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>

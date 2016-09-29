@@ -1,21 +1,8 @@
 html, body, #root {
   margin: 0;
-  height: 100%;
+  height: 100vh;
   font-family: 'Roboto', serif;
   overflow: auto !important;
-}
-
-body, h1, h2, h3 {
-  font-weight: 300
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #5aadbb;
 }
 
 pvs-menu{
@@ -42,78 +29,52 @@ md-select-menu md-option{
   height: 35px;
 }
 md-select-menu .md-text{
-  font-size: 15px;
+  font-size: 12px;
 }
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-// Estils per a la pàgina principal
-.main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-}
-
-.title {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  color: black;
-  text-align: center;
-  height: 100vh;
-  width: 100vw;
-}
-.title ul{
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
-.title ul img{
-  max-height: 100%;
-  max-width: 100%;
-}
-.title span{
-  color: #fae300;
-}
-.title h1{
-  font-family: 'Roboto Slab', serif;
-  text-shadow: 2px 2px #8a8a8a;
-  font-weight: 700;
-  font-size: 4rem;
-}
-.title p{
-  font-weight: lighter;;
-  font-size: 1.5rem;
-}
-.title .text{
-  position: absolute;
-  text-align: right;
-}
-#slide1{
-  
-}
-#slide2 .text{
-  bottom: 10%;
-  right: 5%;
-}
-#slide3 .text{
-  top: 10%;
-  right: 5%;
-}
-
 md-toolbar{
   min-height: 50px;
 }
 .md-toolbar-tools{
   height: 50px;
+}
+
+.main-container{
+  height: 100vh;
+  background-color: white;
+}
+.title{
+  height: 100vh;
+}
+.icona img{
+  max-height: 80vh;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text span{
+  color: #fae300;
+}
+.text h1{
+  font-family: 'Roboto Slab', serif;
+  text-shadow: 2px 2px #8a8a8a;
+  font-weight: 700;
+  font-size: 3vmax;
+}
+.text p{
+  font-weight: lighter;;
+  font-size: 1.7vmax;
+}
+.title .text{
+  text-align: right;
+  padding: 3rem;
+  align-items: flex-end;
+}
+.title .icona{
+  padding: 3rem;
+}
+.title .layout-gt-sm-row{
+  height: 100vh;
 }
 
 pvs-footer{
@@ -130,7 +91,10 @@ pvs-footer{
   text-align: center;
   color: white;
 }
-md-dialog-content{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #5aadbb;
 }

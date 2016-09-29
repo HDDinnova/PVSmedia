@@ -3,7 +3,6 @@
   "version": "0.1",
   "dependencies": {
     "angular": "^1.5.0",
-    "angular-magnificent": "^0.1.1",
     "angular-material": "^1.0.9",
     "angular-route": "^1.5.8",
     "angular-translate": "^2.11.1",
