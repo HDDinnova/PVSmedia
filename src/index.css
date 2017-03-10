@@ -1,8 +1,39 @@
+@font-face {
+  font-family: 'Din';
+  src: url('./DINMedium.ttf')  format('truetype');
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,700');
+
 html, body, #root {
   margin: 0;
   height: 100vh;
   font-family: 'Roboto', serif;
   overflow: auto !important;
+}
+
+.contacta{
+  font-family: 'Din';
+  line-height: 1.7em;
+}
+.contacta h1,h2{
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+.contacta h2{
+  margin-bottom: 0.8em;
+}
+.contacta .data{
+  margin-left: 20px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.data h2{
+  font-size: 1.1em;
+}
+.data a{
+  color: black;
+  text-decoration: none;
+  line-height: 1.4em;
 }
 
 pvs-menu{
@@ -18,6 +49,10 @@ pvs-menu{
 }
 .actiu{
   top: 0;
+}
+.social{
+  height: 30px;
+  margin: 5px;
 }
 md-toolbar md-select .md-text{
   font-size: 15px;
@@ -39,11 +74,21 @@ md-toolbar{
 }
 
 .main-container{
-  height: 100vh;
+  height: calc(100vh - 70px);
   background-color: white;
+  margin-top: 50px;
+}
+.title div{
+  height: 100%;
 }
 .title{
-  height: 100vh;
+  height: 100%;
+}
+.title img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
 }
 .icona img{
   max-height: 80vh;
@@ -52,29 +97,29 @@ md-toolbar{
   margin-left: auto;
   margin-right: auto;
 }
+.text{
+  font-family: 'Roboto Slab', serif;
+  position: absolute;
+}
 .text span{
   color: #fae300;
 }
+.contacta span{
+  color: #fae300;
+}
 .text h1{
-  font-family: 'Roboto Slab', serif;
   text-shadow: 2px 2px #8a8a8a;
   font-weight: 700;
   font-size: 3vmax;
+  margin: 0 !important;
 }
 .text p{
-  font-weight: lighter;;
+  font-weight: 100;
   font-size: 1.7vmax;
-}
-.title .text{
-  text-align: right;
-  padding: 3rem;
-  align-items: flex-end;
+  margin: .6rem 0 0 0;
 }
 .title .icona{
   padding: 3rem;
-}
-.title .layout-gt-sm-row{
-  height: 100vh;
 }
 
 pvs-footer{

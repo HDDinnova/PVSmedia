@@ -46,10 +46,13 @@
       <md-toolbar class="md-hue-2" ng-controller="menuCtrl">
         <div class="md-toolbar-tools">
           <h2 class="terres"><span><a ui-sref="index"><img src="img/pvs-logo.png" alt="Logo PVSmedia" class="logomenu" /><strong>&nbspPVS</strong>&nbspmedia</a></span></h2>
+          <a href="https://www.facebook.com/pvsmedia/" target="_blank"><img src="img/facebook.png" alt="" class="social"></a>
+          <a href="https://twitter.com/pvs_media" target="_blank"><img src="img/twitter.png" alt="" class="social"></a>
           <span flex></span>
-          <md-button>{{'MENU.HOLA' | translate}}</md-button>
-          <md-button>{{'MENU.PORTFOLI' | translate}}</md-button>
-          <md-button>{{'MENU.CONTACTA' | translate}}</md-button>
+          <md-button ui-sref="index">{{'MENU.HOLA' | translate}}</md-button>
+          <md-button ng-click="port()">{{'MENU.PORTFOLI' | translate}}</md-button>
+          <md-button ng-click="blog()">BLOG</md-button>
+          <md-button ui-sref="contacta">{{'MENU.CONTACTA' | translate}}</md-button>
           <md-select ng-model="userLang" aria-label="Select language" ng-change="setLang()" class="md-no-underline">
             <md-option ng-repeat="idi in langs" value="{{idi}}" aria.label="{{idi}}" ng-selected="isCurrentLang('{{idi | lowercase}}')">{{idi}}</md-option>
           </md-select>
@@ -67,6 +70,8 @@
       </footer>
     </pvs-footer>
   </body>
+
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyCmqB5AoE1aor7K0Z0Mwyw1fuOmkASdzLw"></script>
 
   <!-- build:js({.tmp,src}) scripts/vendor.js -->
   <!-- bower:js -->

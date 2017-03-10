@@ -1,5 +1,5 @@
 angular
-  .module('app', ['ui.router', 'ngAnimate', 'ngMaterial', 'pascalprecht.translate', 'ngCookies', 'ngSanitize', 'angular-carousel'])
+  .module('app', ['ui.router', 'ngAnimate', 'ngMaterial', 'pascalprecht.translate', 'ngSanitize', 'ksSwiper', 'ngMap'])
   .config(function ($mdThemingProvider, $translateProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('grey', {
@@ -15,14 +15,13 @@ angular
       })
       .determinePreferredLanguage()
       .fallbackLanguage('en')
-      .useLocalStorage()
       .useStaticFilesLoader({
         prefix: 'i18n/locale-',
         suffix: '.json'
       })
       .useSanitizeValueStrategy('sanitize');
   })
-  .controller('menuCtrl', function ($scope, $translate, $timeout) {
+  .controller('menuCtrl', function ($scope, $rootScope, $translate, $timeout, $window) {
     $scope.langs = [
       'CA',
       'ES',
@@ -37,10 +36,17 @@ angular
     $scope.selOpt = $translate.use();
     $scope.setLang = function () {
       $translate.use($scope.userLang.toLowerCase());
+      $rootScope.$broadcast('langChange', $scope.userLang.toLowerCase());
     };
     $timeout(function () {
       angular.element(document.querySelector('pvs-menu')).addClass('actiu');
     }, 1500);
+    $scope.port = function () {
+      $window.location.href = 'http://pvsmedia.info/portfolio/' + $translate.use() + '/category/portfoli/';
+    };
+    $scope.blog = function () {
+      $window.location.href = 'http://pvsmedia.info/portfolio/' + $translate.use() + '/category/blog/';
+    };
   })
   .controller('footerCtrl', function ($scope) {
     $scope.any = new Date();

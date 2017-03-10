@@ -9,6 +9,11 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('index', {
       url: '/',
-      templateUrl: 'app/main.html'
+      templateUrl: 'app/main.html',
+      controller: 'MainCtrl'
+    })
+    .state('contacta', {
+      url: '/contacta',
+      templateUrl: 'app/contact.html'
     });
 }
