@@ -21,7 +21,7 @@ angular
       })
       .useSanitizeValueStrategy('sanitize');
   })
-  .controller('menuCtrl', function ($scope, $rootScope, $translate, $timeout, $window) {
+  .controller('menuCtrl', function ($scope, $rootScope, $translate, $timeout, $window, $mdSidenav) {
     $scope.langs = [
       'CA',
       'ES',
@@ -47,6 +47,17 @@ angular
     $scope.blog = function () {
       $window.location.href = 'http://pvsmedia.info/portfolio/' + $translate.use() + '/category/blog/';
     };
+    $scope.toggleRight = function () {
+      $mdSidenav('right').toggle();
+    };
+    $scope.close = function () {
+      $mdSidenav('right').close();
+    };
+    // function rightMenu() {
+    //   if ($mdSidenav('right').isOpen()) {
+    //     $mdSidenav('right').close();
+    //   }
+    // }
   })
   .controller('footerCtrl', function ($scope) {
     $scope.any = new Date();

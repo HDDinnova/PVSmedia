@@ -51,8 +51,8 @@ pvs-menu{
   top: 0;
 }
 .social{
-  height: 30px;
-  margin: 5px;
+  height: 20px;
+  margin: 5px 0 0 10px;
 }
 md-toolbar md-select .md-text{
   font-size: 15px;
@@ -72,6 +72,17 @@ md-toolbar{
 .md-toolbar-tools{
   height: 50px;
 }
+.md-sidenav-right{
+  padding: 5px 25px;
+}
+.md-sidenav-right .md-button{
+  width: 100%;
+}
+.md-sidenav-right md-select{
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .main-container{
   height: calc(100vh - 70px);
@@ -89,6 +100,20 @@ md-toolbar{
   margin-right: auto;
   margin-left: auto;
   height: 100%;
+}
+.mobile div{
+  height: 100%;
+}
+.mobile{
+  height: 100%;
+  padding: 10px;
+}
+.mobile img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 90%;
+  max-height: 80%;
 }
 .icona img{
   max-height: 80vh;

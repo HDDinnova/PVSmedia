@@ -41,24 +41,37 @@
     <!-- endbuild -->
   </head>
 
-  <body ng-app="app">
+  <body ng-app="app"  ng-controller="menuCtrl">
     <pvs-menu>
-      <md-toolbar class="md-hue-2" ng-controller="menuCtrl">
+      <md-toolbar class="md-hue-2">
         <div class="md-toolbar-tools">
           <h2 class="terres"><span><a ui-sref="index"><img src="img/pvs-logo.png" alt="Logo PVSmedia" class="logomenu" /><strong>&nbspPVS</strong>&nbspmedia</a></span></h2>
           <a href="https://www.facebook.com/pvsmedia/" target="_blank"><img src="img/facebook.png" alt="" class="social"></a>
           <a href="https://twitter.com/pvs_media" target="_blank"><img src="img/twitter.png" alt="" class="social"></a>
+          <a href="https://www.linkedin.com/company-beta/11064053/" target="_blank"><img src="img/linkedin.png" alt="" class="social"></a>
           <span flex></span>
-          <md-button ui-sref="index">{{'MENU.HOLA' | translate}}</md-button>
-          <md-button ng-click="port()">{{'MENU.PORTFOLI' | translate}}</md-button>
-          <md-button ng-click="blog()">BLOG</md-button>
-          <md-button ui-sref="contacta">{{'MENU.CONTACTA' | translate}}</md-button>
-          <md-select ng-model="userLang" aria-label="Select language" ng-change="setLang()" class="md-no-underline">
+          <md-button show-gt-sm hide ui-sref="index">{{'MENU.HOLA' | translate}}</md-button>
+          <md-button show-gt-sm hide ng-click="port()">{{'MENU.PORTFOLI' | translate}}</md-button>
+          <md-button show-gt-sm hide ng-click="blog()">BLOG</md-button>
+          <md-button show-gt-sm hide ui-sref="contacta">{{'MENU.CONTACTA' | translate}}</md-button>
+          <md-select show-gt-sm hide ng-model="userLang" aria-label="Select language" ng-change="setLang()" class="md-no-underline">
             <md-option ng-repeat="idi in langs" value="{{idi}}" aria.label="{{idi}}" ng-selected="isCurrentLang('{{idi | lowercase}}')">{{idi}}</md-option>
           </md-select>
+          <md-button hide-gt-sm aria-label="menu" ng-click="toggleRight()"><md-icon class="md-default-theme" md-svg-src="img/ic_menu_black_24px.svg"></md-icon></md-button>
         </div>
       </md-toolbar>
     </pvs-menu>
+    <div layout="column">
+      <md-sidenav md-component-id="right" class="md-sidenav-right">
+        <md-button hide-gt-sm ui-sref="index" ng-click="close()">{{'MENU.HOLA' | translate}}</md-button>
+        <md-button hide-gt-sm ng-click="port()">{{'MENU.PORTFOLI' | translate}}</md-button>
+        <md-button hide-gt-sm ng-click="blog()">BLOG</md-button>
+        <md-button hide-gt-sm ui-sref="contacta" ng-click="close()">{{'MENU.CONTACTA' | translate}}</md-button>
+        <md-select hide-gt-sm ng-model="userLang" aria-label="Select language" ng-change="setLang()" class="md-no-underline">
+          <md-option ng-repeat="idi in langs" value="{{idi}}" aria.label="{{idi}}" ng-selected="isCurrentLang('{{idi | lowercase}}')" ng-click="close()">{{idi}}</md-option>
+        </md-select>
+      </md-sidenav>
+    </div>
     <div ui-view></div>
     <pvs-footer>
       <footer class="footer" ng-controller="footerCtrl">

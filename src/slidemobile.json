@@ -1,0 +1,37 @@
+{
+  "slides": {
+    "0": {
+      "img": "slide_1_mobile.jpg",
+      "text1_ca": "",
+      "text1_es": "",
+      "text1_en": "",
+      "text2_ca": "",
+      "text2_es": "",
+      "text2_en": "",
+      "top": "",
+      "left": ""
+    },
+    "1": {
+      "img": "slide_2_mobile.jpg",
+      "text1_ca": "Un <span>objectiu</span><br/>sense un <span>pla</span><br/>és només un desig",
+      "text1_es": "Un <span>objetivo</span><br/>sin un <span>plan</span><br/>es tan sólo un deseo",
+      "text1_en": "A <span>goal</span><br/>without a <span>plan</span><br/>is just a wish",
+      "text2_ca": "Antoine de Sant-Exupéry",
+      "text2_es": "Antoine de Sant-Exupéry",
+      "text2_en": "Antoine de Sant-Exupéry",
+      "top": "55%",
+      "left": "40%"
+    },
+    "2": {
+      "img": "slide_3_mobile.jpg",
+      "text1_ca": "El <span>Màrketing</span> ja no es basa<br/>en els productes que elabores,<br/>sinó en les <span>històries</span> que contes",
+      "text1_es": "El <span>Marketing</span> ya no se basa<br/>en los productos que elaboras,<br/>sino en las <span>historias</span> que cuentas",
+      "text1_en": "<span>Marketing</span> is no longer<br/>about the stuff that you make,<br/>but about the <span>stories</span> you tell",
+      "text2_ca": "Seth Godin",
+      "text2_es": "Seth Godin",
+      "text2_en": "Seth Godin",
+      "top": "50%",
+      "left": "10%"
+    }
+  }
+}
